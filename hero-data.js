@@ -2,7 +2,7 @@ const apiCall = require('./api-call');
 // Trammy123
 const args = process.argv.slice(2);
 const username = args[0] || 'Trammy123';
-const platform = args[1] || 'pc';
+const platform = args[1] || 'psn';
 
 module.exports = apiCall(username, platform)
     .then((result) => {
@@ -30,6 +30,6 @@ module.exports = apiCall(username, platform)
         // console.log('xxxx: ', JSON.stringify(heroes[0], undefined, 2));
         const userStats = result.any.stats;
         const userAchievements = result.any.achievements;
-         console.log('xxxx: ', heroes[0]);
+         console.log('xxxx: ', heroes);
     })
 
