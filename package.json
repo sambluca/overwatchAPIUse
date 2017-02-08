@@ -1,0 +1,22 @@
+{
+  "name": "overwatch-api-consumer",
+  "version": "1.0.0",
+  "description": "A consumer for the overwatch api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambluca/overwatchAPIUse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sambluca/overwatchAPIUse/issues"
+  },
+  "homepage": "https://github.com/sambluca/overwatchAPIUse#readme",
+  "dependencies": {
+    "axios": "^0.15.3"
+  }
+}
