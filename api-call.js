@@ -1,8 +1,8 @@
 const axios = require('axios');
 const https = require('https');
 
-module.exports = (username) => {
-  const endpoint = `https://owapi.net/api/v3/u/${username}/heroes?platform=psn`;
+module.exports = (username, platform) => {
+  const endpoint = `https://owapi.net/api/v3/u/${username}/blob?platform=${platform}`;
 
   return axios.get(endpoint)
     .then(function (response) {
