@@ -27,7 +27,6 @@ module.exports = apiCall(username, platform)
                     }
             }
         });
-        // console.log('xxxx: ', JSON.stringify(heroes[0], undefined, 2));
         const userStats = result.any.stats;
         const userAchievements = result.any.achievements;
          console.log('xxxx: ', heroes);
