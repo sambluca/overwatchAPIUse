@@ -8,9 +8,6 @@ module.exports = (username, platform) => {
     .then(function (response) {
       return response.data;
     })
-    .then((res) => {
-      return res;
-    })
     .catch(function (error) {
       console.log(error);
     })
