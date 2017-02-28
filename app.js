@@ -1,18 +1,15 @@
 const express = require('express');
-const nunjucks = require('nunjucks');
 const app = express();
 const heroData = require('./hero-data');
+const homepage = require('./index')
 
 
 app.get('/', function (req, res) {
 
     heroData().then((result) => {
-        const heroStats = result.heroes;
-        for(var i = 0; heroStats.length >= i; i++){
-            var display = heroStats[i]
-            res.send(`<p>${display.name}</p>`);
-            console.log(heroStats[i]);
-        }
+        
+        res.send(homepage(result));
+
     });
   
 })
