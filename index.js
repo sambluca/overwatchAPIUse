@@ -1,4 +1,5 @@
 module.exports = (data) => {
+     console.log(data.userStats.quickplay.overall_stats);
     var content = `<style>
             .heroStats {
                 border: 1px solid red;
@@ -16,7 +17,12 @@ module.exports = (data) => {
             .stats{
                 display: inline-block;
             }
-        </style><h1>${data.username}</h1>`
+
+            .username {
+                text-align: center;
+            }
+        </style><h1 class="username">${data.username}</h1>
+        <p class="username">Time played: ${data.userStats.quickplay.game_stats.time_played} hours || Level: ${data.userStats.quickplay.overall_stats.prestige}${data.userStats.quickplay.overall_stats.level}</p>`
     for (var i = 0; data.heroes.length > i; i++) {
         var display = data.heroes[i]
         content = content + `
@@ -33,7 +39,7 @@ module.exports = (data) => {
 
         </div>
         `;
-        console.log(display.name, ': ', display.stats.quickplay);
+       
     }
     return content;
 }

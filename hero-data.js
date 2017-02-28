@@ -28,7 +28,7 @@ module.exports = () => {
                 });
                 const userStats = result.any.stats;
                 const userAchievements = result.any.achievements;
-
+        
                 return {
                     username: username,
                     platform: platform,
