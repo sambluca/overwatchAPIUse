@@ -1,5 +1,4 @@
 const express = require('express');
-const nunjucks = require('nunjucks');
 const app = express();
 const heroData = require('./hero-data');
 const homepage = require('./index')

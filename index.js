@@ -21,7 +21,7 @@ module.exports = (data) => {
         var display = data.heroes[i]
         content = content + `
         <div class="heroStats">
-        <div class="heroName"><h1 >${display.name}</h1></div>
+        <div class="heroName"><h1>${display.name}</h1></div>
         <div class="stats">QP Time Played: ${display.playtime.quickplay}</div>
         <div class="stats">Deaths: ${display.stats.quickplay.general_stats.deaths}</div>
         <div class="stats">Games Won: ${display.stats.quickplay.general_stats.games_won}</div>
